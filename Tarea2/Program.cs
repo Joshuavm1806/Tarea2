@@ -28,7 +28,7 @@ namespace Tarea2
                 double horas;
                 double precioHora;
 
-                Console.Write("Digite la cédula: ");
+                Console.Write("\nDigite la cédula: ");
                 cedula = Console.ReadLine();
 
                 Console.Write("Digite el nombre del empleado: ");
@@ -67,9 +67,8 @@ namespace Tarea2
                 double deduccion = salarioBruto * 0.0917;
                 double salarioNeto = salarioBruto - deduccion;
 
-                // transacción
-                Console.WriteLine("----------------------------\n");
-                Console.WriteLine("\nDetalle:");
+                Console.WriteLine("\n----------------------------");
+                Console.WriteLine("Detalle:");
                 Console.WriteLine("Cédula: " + cedula);
                 Console.WriteLine("Nombre Empleado: " + nombre);
                 Console.WriteLine("Tipo Empleado: " + tipoTexto);
@@ -103,7 +102,7 @@ namespace Tarea2
                 continuar = Console.ReadLine();
             }
 
-            // Cálculo de promedios
+            // Promedios
             double promOperarios = 0;
             double promTecnicos = 0;
             double promProfesionales = 0;
@@ -117,7 +116,6 @@ namespace Tarea2
             if (cantProfesionales > 0)
                 promProfesionales = acumProfesionales / cantProfesionales;
 
-            // Mostrar estadísticas
             Console.WriteLine("\nEstadísticas:");
             Console.WriteLine("1) Cantidad Empleados Tipo Operarios: " + cantOperarios);
             Console.WriteLine("2) Acumulado Salario Neto para Operarios: " + acumOperarios);
